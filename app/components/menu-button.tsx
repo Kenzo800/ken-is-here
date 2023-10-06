@@ -1,6 +1,8 @@
 "use client";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import NavbarItem from "@/app/components/navbar-tiem";
 
 const variants = {
   visible: { opacity: 1, scale: 1, y: 0 },
@@ -9,6 +11,14 @@ const variants = {
 
 export default function MenuButton() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const menuItems = [
+    { href: "#about", text: "About Me" },
+    { href: "#project", text: "Project" },
+    { href: "#education", text: "Education" },
+    { href: "#link", text: "Link" },
+    { href: "#contact", text: "Contact" },
+  ];
 
   return (
     <div className="relative md:hidden">
@@ -50,7 +60,7 @@ export default function MenuButton() {
               aria-orientation="vertical"
               aria-labelledby="options-menu"
             >
-              <motion.a
+              {/* <motion.a
                 href="#about"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 role="menuitem"
@@ -94,7 +104,11 @@ export default function MenuButton() {
                 transition={{ delay: 0.5 }}
               >
                 Contacts
-              </motion.a>
+              </motion.a> */}
+
+              {menuItems.map((item, i) => (
+                <NavbarItem key={i} href={item.href} text={item.text} />
+              ))}
             </div>
           </motion.div>
         )}

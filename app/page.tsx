@@ -16,7 +16,7 @@ export default function Home() {
           <p>Your introduction...</p>
         </section>
 
-        <section id="projects" className="mb-8 text-center">
+        <section id="project" className="mb-8 text-center">
           <h2 className="text-3xl font-semibold mb-2">Projects</h2>
           <div className="grid gap-4">
             <div className="border p-4 rounded">
@@ -35,7 +35,7 @@ export default function Home() {
           <p>Your education history...</p>
         </section>
 
-        <section id="links" className="mb-8 text-center">
+        <section id="link" className="mb-8 text-center">
           <h2 className="text-3xl font-semibold mb-2">Useful Links</h2>
           <ul className="list-disc ml-5">
             <li>
