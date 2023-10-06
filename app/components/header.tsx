@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import MenuButton from "@/app/components/menu-button";
 export default function Header() {
   return (
     <header className="p-4 bg-white shadow-md">
@@ -15,7 +15,7 @@ export default function Header() {
             ();
           </span>
         </Link>
-        <div className="space-x-4">
+        <div className="space-x-3 hidden md:inline">
           <span className="hidden lg:inline">const navBar = </span>
           <span>[</span>
           <Link href="#about">
@@ -39,6 +39,7 @@ export default function Header() {
           </Link>
           <span>]</span>
         </div>
+        <MenuButton />
       </nav>
     </header>
   );
