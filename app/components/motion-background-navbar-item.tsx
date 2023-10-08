@@ -38,7 +38,7 @@ export default function MotionBackgroundNavbarItem({
       whileHover={{ scale: 1.1 }}
     >
       <Link href={href}>
-        <span className="text-blue-500 hover:text-white cursor-pointer">
+        <span className="text-blue-500 hover:bg-blue-200 p-2 rounded cursor-pointer">
           {text}
         </span>
       </Link>

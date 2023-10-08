@@ -107,7 +107,12 @@ export default function MenuButton() {
               </motion.a> */}
 
               {menuItems.map((item, i) => (
-                <NavbarItem key={i} href={item.href} text={item.text} />
+                <NavbarItem
+                  key={i}
+                  delay={(i + 1) * 0.15}
+                  href={item.href}
+                  text={item.text}
+                />
               ))}
             </div>
           </motion.div>

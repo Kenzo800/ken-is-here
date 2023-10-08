@@ -1,24 +1,25 @@
 /* NavbarItem.module.css */
-@keyframes gradient {
-    0% { background-position: -100%; }
-    100% { background-position: 100%; }
-  }
-  
-  .navbarItem {
-    /* Define your gradient here */
-    background: linear-gradient(
-        to right,
-        pink 0%,
-        pink 50%,
-        paleturquoise 50%,
-        paleturquoise 100%
-    );
-    background-size: 200%;
-    background-position: -100%;
-    transition: background-position 1s;
-  }
-  
-  .navbarItem:hover {
-    background-position: 100%;
-  }
-  
+
+.navbarItem {
+  /* Define your initial background color here */
+
+  position: relative;
+  overflow: hidden;
+}
+
+.navbarItem::before {
+  /* Define your hover background color here */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: blue;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  z-index: -1; /* Place the pseudo-element behind the text */
+}
+
+.navbarItem:hover::before {
+  transform: translateX(0);
+}

@@ -9,9 +9,11 @@ const variants = {
 export default function NavbarItem({
   href,
   text,
+  delay,
 }: {
   href: string;
   text: string;
+  delay: number;
 }) {
   return (
     <div className="relative overflow-hidden">
@@ -20,7 +22,7 @@ export default function NavbarItem({
         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
         role="menuitem"
         variants={variants}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: delay }}
       >
         {text}
       </motion.a>
