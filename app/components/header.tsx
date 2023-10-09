@@ -11,7 +11,7 @@ export default function Header() {
     { href: "#contact", text: "Contact" },
   ];
   return (
-    <header className="p-4 bg-white shadow-md">
+    <header className="p-4 bg-white shadow-md sticky top-0">
       <nav className="container mx-auto flex justify-between">
         <Link href="/" className="hover:bg-blue-200 p-2 rounded">
           <span className="text-2xl font-bold text-blue-500 cursor-pointer hidden lg:inline">
