@@ -5,8 +5,8 @@ import MotionBackgroundNavbarItem from "@/app/components/motion-background-navba
 export default function Header() {
   const menuItems = [
     { href: "#about", text: "About Me" },
-    { href: "#project", text: "Project" },
     { href: "#education", text: "Education" },
+    { href: "#project", text: "Project" },
     { href: "#link", text: "Link" },
     { href: "#contact", text: "Contact" },
   ];
