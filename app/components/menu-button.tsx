@@ -16,7 +16,6 @@ export default function MenuButton() {
     { href: "#about", text: "About Me" },
     { href: "#education", text: "Education" },
     { href: "#project", text: "Project" },
-    { href: "#link", text: "Link" },
     { href: "#contact", text: "Contact" },
   ];
 
@@ -60,52 +59,6 @@ export default function MenuButton() {
               aria-orientation="vertical"
               aria-labelledby="options-menu"
             >
-              {/* <motion.a
-                href="#about"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                role="menuitem"
-                variants={variants}
-                transition={{ delay: 0.1 }}
-              >
-                About Me
-              </motion.a>
-              <motion.a
-                href="#projects"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                role="menuitem"
-                variants={variants}
-                transition={{ delay: 0.2 }}
-              >
-                Projects
-              </motion.a>
-              <motion.a
-                href="#education"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                role="menuitem"
-                variants={variants}
-                transition={{ delay: 0.3 }}
-              >
-                Educations
-              </motion.a>
-              <motion.a
-                href="#links"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                role="menuitem"
-                variants={variants}
-                transition={{ delay: 0.4 }}
-              >
-                Links
-              </motion.a>
-              <motion.a
-                href="#contact"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                role="menuitem"
-                variants={variants}
-                transition={{ delay: 0.5 }}
-              >
-                Contacts
-              </motion.a> */}
-
               {menuItems.map((item, i) => (
                 <NavbarItem
                   key={i}

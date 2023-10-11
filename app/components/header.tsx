@@ -7,7 +7,6 @@ export default function Header() {
     { href: "#about", text: "About Me" },
     { href: "#education", text: "Education" },
     { href: "#project", text: "Project" },
-    { href: "#link", text: "Link" },
     { href: "#contact", text: "Contact" },
   ];
   return (

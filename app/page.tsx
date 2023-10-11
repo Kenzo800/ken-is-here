@@ -1,6 +1,10 @@
+"use client";
+
 import Header from "./components/header";
 import MyFace from "./components/my-face";
 import ProjectCard from "./components/project-card";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsGithub } from "react-icons/bs";
 
 export default function Home() {
   const imageCardInfo = {
@@ -77,12 +81,12 @@ export default function Home() {
           Welcome to My Portfolio
         </h1>
 
-        <section id="about" className="my-8 text-center pt-24">
+        <section id="about" className="my-4 text-center pt-24">
           <h2 className="text-3xl font-semibold mb-8">About Me</h2>
           <MyFace src={imageCardInfo.src} alt={imageCardInfo.alt} />
         </section>
 
-        <section id="education" className="my-8 text-center pt-24">
+        <section id="education" className="my-4 text-center pt-24">
           <h2 className="text-3xl font-semibold mb-2">Education</h2>
           <div className="w-full p-4">
             <ul>
@@ -109,7 +113,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="project" className="my-8 text-center pt-24">
+        <section id="project" className="my-4 text-center pt-24">
           <h2 className="text-3xl font-semibold mb-8">Projects</h2>
           <div className="mt-16 grid grid-rows-2 grid-flow-row gap-4 lg:grid-flow-col 2xl:grid-rows-1">
             {cardContent.map((item, i) => (
@@ -118,32 +122,23 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="link" className="my-8 text-center pt-24">
-          <h2 className="text-3xl font-semibold mb-2">Useful Links</h2>
-          <ul className="list-disc ml-5">
-            <li>
-              <a
-                href="https://github.com/yourusername"
-                className="text-blue-500"
-              >
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com/in/yourusername"
-                className="text-blue-500"
-              >
-                LinkedIn
-              </a>
-            </li>
-            {/* Add more as needed */}
-          </ul>
-        </section>
+        <section id="contact" className="my-4 text-center pt-24 w-full">
+          <h2 className="text-3xl font-semibold mb-2">Contact and Links</h2>
+          <div className="w-full py-8">
+            <p className="flex justify-center my-4">
+              <HiOutlineMail className="mr-2 align-middle" size={24} />
+              cwhformal@gmail.com
+            </p>
 
-        <section id="contact" className="my-8 text-center pt-24">
-          <h2 className="text-3xl font-semibold mb-2">Contact Me</h2>
-          <p>Your contact info...</p>
+            <p className="flex justify-center my-4">
+              <a href="https://github.com/Kenzo800" target="_blank">
+                <div className="flex hover:underline cursor-pointer rounded-sm hover:bg-zinc-300 hover:text-black px-4 py-2">
+                  <BsGithub className="mr-2 align-middle" size={24} />
+                  https://github.com/Kenzo800
+                </div>
+              </a>
+            </p>
+          </div>
         </section>
       </main>
 
